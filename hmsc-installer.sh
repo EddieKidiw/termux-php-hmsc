@@ -20,7 +20,7 @@ install(){
     URL="https://github.com/EddieKidiw/termux-php-hmsc/releases/download/v1.0.0/${DEB}"
     cd ${TMPDIR}
     curl -sL ${URL} -o ${DEB}
-    dpkg -i /storage/emulated/0/HMSC/termux-packages/a/output/hmsc_2.0.0-2_aarch64.deb
+    dpkg -i ${DEB}
     rm ${DEB}
     cd ${SCRIPT_DIR}
     if test -f "$PREFIX/lib/php/hmsc.so"; then
